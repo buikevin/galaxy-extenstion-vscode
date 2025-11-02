@@ -1,0 +1,10 @@
+node_modules
+dist
+webview-dist
+*.vsix
+.env
+.DS_Store
+*.log
+bun.lockb
+.vscode-test/
+coverage/

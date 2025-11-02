@@ -1,0 +1,154 @@
+.message-item {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.message-item:hover {
+  background-color: var(--vscode-list-hoverBackground);
+}
+
+.message-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.message-user .message-avatar {
+  background-color: var(--vscode-textLink-foreground);
+}
+
+.message-assistant .message-avatar {
+  background-color: var(--vscode-button-background);
+}
+
+.avatar-icon {
+  font-size: 18px;
+}
+
+.message-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.message-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.message-role {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--vscode-foreground);
+}
+
+.message-time {
+  font-size: 11px;
+  color: var(--vscode-descriptionForeground);
+}
+
+.message-content {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.message-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.message-markdown {
+  word-wrap: break-word;
+}
+
+.message-markdown p {
+  margin: 0 0 12px 0;
+}
+
+.message-markdown p:last-child {
+  margin-bottom: 0;
+}
+
+.message-markdown ul,
+.message-markdown ol {
+  margin: 8px 0;
+  padding-left: 24px;
+}
+
+.message-markdown li {
+  margin: 4px 0;
+}
+
+.message-markdown h1,
+.message-markdown h2,
+.message-markdown h3,
+.message-markdown h4,
+.message-markdown h5,
+.message-markdown h6 {
+  margin: 16px 0 8px 0;
+  font-weight: 600;
+}
+
+.message-markdown h1 {
+  font-size: 1.6em;
+}
+
+.message-markdown h2 {
+  font-size: 1.4em;
+}
+
+.message-markdown h3 {
+  font-size: 1.2em;
+}
+
+.message-markdown blockquote {
+  border-left: 3px solid var(--vscode-textBlockQuote-border);
+  background-color: var(--vscode-textBlockQuote-background);
+  padding: 8px 12px;
+  margin: 8px 0;
+}
+
+.message-markdown table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.message-markdown th,
+.message-markdown td {
+  border: 1px solid var(--vscode-panel-border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.message-markdown th {
+  background-color: var(--vscode-editor-lineHighlightBackground);
+  font-weight: 600;
+}
+
+.message-markdown pre {
+  position: relative;
+  cursor: pointer;
+}
+
+.message-markdown pre:hover::before {
+  content: 'Click to execute';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: var(--vscode-button-background);
+  color: var(--vscode-button-foreground);
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-family: var(--vscode-font-family);
+}
