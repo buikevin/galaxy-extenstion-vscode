@@ -3,7 +3,7 @@
   "displayName": "Galaxy Code",
   "description": "AI-powered coding assistant with chat interface for VSCode",
   "version": "0.1.0",
-  "publisher": "galaxy",
+  "publisher": "buikevin",
   "icon": "resources/icon.png",
   "license": "MIT",
   "repository": {
